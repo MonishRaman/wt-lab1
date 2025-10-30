@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Monish — Portfolio & Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">Monish</a>
+        <nav class="main-nav">
+          <a href="resume.html">Resume</a>
+          <a href="biodata.html">Bio-data</a>
+          <button id="themeToggle" class="btn small">🌙</button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-left">
+            <h1>Hi, I'm Monish</h1>
+            <p class="lead">Web developer &amp; designer focused on creating clear, beautiful digital experiences. I build responsive websites and simple, fast user interfaces.</p>
+            <div class="cta-row">
+              <a class="btn primary" href="resume.html">View Resume</a>
+              <a class="btn outline" href="biodata.html">View Bio-data</a>
+            </div>
+          </div>
+          <div class="hero-right">
+            <div class="card profile-card">
+              <img src="https://via.placeholder.com/300x300.png?text=Photo" alt="profile photo">
+              <h3>Monish Raman</h3>
+              <p class="muted">Frontend Developer</p>
+              <ul class="profile-stats">
+                <li><strong>5+</strong><span>Years</span></li>
+                <li><strong>30+</strong><span>Projects</span></li>
+                <li><strong>10</strong><span>Certs</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container features">
+        <h2 class="section-title">What I do</h2>
+        <div class="grid cols-3">
+          <div class="feature">
+            <i class="fa-solid fa-code fa-2x"></i>
+            <h4>Web Development</h4>
+            <p>Semantic HTML, accessible components, and performant frontends.</p>
+          </div>
+          <div class="feature">
+            <i class="fa-solid fa-paint-brush fa-2x"></i>
+            <h4>Design</h4>
+            <p>Clean UI, usable interaction patterns, and thoughtful spacing.</p>
+          </div>
+          <div class="feature">
+            <i class="fa-solid fa-rocket fa-2x"></i>
+            <h4>Optimization</h4>
+            <p>Fast load times, code splitting, and progressive enhancement.</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>Made with ♥ — <a href="resume.html">Resume</a> · <a href="biodata.html">Bio-data</a></p>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

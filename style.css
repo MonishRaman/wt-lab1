@@ -1,0 +1,70 @@
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --muted:#9aa4b2;
+  --accent:#6ee7b7;
+  --text:#e6eef6;
+  --glass: rgba(255,255,255,0.03);
+}
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,Arial,Helvetica,sans-serif;margin:0;background:linear-gradient(180deg,#071022 0%, #081226 60%);color:var(--text);line-height:1.5}
+.container{max-width:1100px;margin:0 auto;padding:1.25rem}
+.site-header{background:transparent;padding:.75rem 0}
+.site-header.small{padding:.35rem 0}
+.header-inner{display:flex;align-items:center;justify-content:space-between}
+.brand{font-weight:800;color:var(--accent);text-decoration:none;font-size:1.25rem}
+.main-nav a{color:var(--text);text-decoration:none;margin-right:1rem}
+.main-nav .btn{margin-left:.5rem}
+
+.hero{padding:3rem 0}
+.hero-grid{display:grid;grid-template-columns:1fr 360px;gap:2rem;align-items:center}
+.hero h1{font-size:2.4rem;margin:0 0 .5rem}
+.lead{color:var(--muted);font-size:1.05rem}
+.cta-row{margin-top:1.25rem}
+.btn{display:inline-block;padding:.6rem .9rem;border-radius:8px;border:1px solid transparent;background:transparent;color:var(--text);cursor:pointer;text-decoration:none}
+.btn.small{padding:.35rem .6rem;font-size:.9rem}
+.btn.primary{background:linear-gradient(90deg,var(--accent),#3ee0a4);color:#022;box-shadow:0 6px 18px rgba(102,255,189,.06);border:none}
+.btn.outline{border:1px solid rgba(255,255,255,0.06)}
+
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:1.25rem;border-radius:12px;box-shadow:0 8px 30px rgba(2,6,23,0.6)}
+.profile-card{display:flex;flex-direction:column;align-items:center;text-align:center;padding:2rem}
+.profile-card img{width:140px;height:140px;border-radius:12px;object-fit:cover;margin-bottom:.75rem}
+.muted{color:var(--muted)}
+.profile-stats{list-style:none;padding:0;margin:1rem 0 0;display:flex;gap:1rem}
+.profile-stats li{display:flex;flex-direction:column;align-items:center}
+.section-title{margin:0 0 1rem}
+
+.features .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.feature{background:var(--glass);padding:1rem;border-radius:10px;text-align:center}
+
+.resume{padding:2rem 0}
+.resume-grid{display:grid;grid-template-columns:300px 1fr;gap:1rem}
+.resume-left .side-card img{width:120px;height:120px;border-radius:8px;object-fit:cover}
+.skills{list-style:none;padding:0}
+.skills li{background:rgba(255,255,255,0.03);padding:.4rem .6rem;border-radius:8px;margin:.4rem 0;display:inline-block;margin-right:.5rem}
+.resume-header{display:flex;align-items:center;justify-content:space-between}
+.exp{margin:0.5rem 0 1rem}
+
+.biodata .biodata-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.biodata-table{width:100%;border-collapse:collapse}
+.biodata-table td{padding:.4rem .5rem;border-bottom:1px solid rgba(255,255,255,0.02)}
+
+.site-footer{padding:1rem 0;margin-top:2rem;border-top:1px solid rgba(255,255,255,0.02)}
+.footer-inner{display:flex;justify-content:center}
+
+/* Responsive */
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr}
+  .resume-grid{grid-template-columns:1fr}
+  .features .grid{grid-template-columns:1fr}
+}
+
+/* Print styles for resume */
+@media print{
+  body{background:white;color:#000}
+  .site-header,.site-footer,.btn{display:none}
+  .card{box-shadow:none;border-radius:0;background:transparent}
+}
+
+/* Light theme toggles applied by .light-theme on body */
+body.light-theme{--bg:#f6f8fb;--card:#ffffff;--muted:#54657a;--accent:#0ea5a4;--text:#082032}
